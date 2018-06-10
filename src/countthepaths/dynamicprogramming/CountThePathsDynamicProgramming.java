@@ -84,18 +84,16 @@ public class CountThePathsDynamicProgramming
             return memo[r][c];
         }
         
-        int count;
         if (r == 0 && c == s.length() - 1)
         {
-            count = 1;
+            return 1;
         }
         else
         {
-            count = countPaths(grid, memo, r, c+1) + countPaths(grid, memo, r-1, c);
+            memo[r][c] = countPaths(grid, memo, r, c+1) + countPaths(grid, memo, r-1, c);
         }
-        memo[r][c] = count;
         
-        return count;
+        return memo[r][c];
         
     }
     

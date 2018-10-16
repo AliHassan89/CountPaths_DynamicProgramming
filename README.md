@@ -45,3 +45,9 @@ strings corresponds to a row in the grid.
 8. Lastly recursively call function moving one column to the right plus moving one row up and saving the value in memo table for that row and column.
 
 9. return value from memo table for row and column.
+
+Time complexity:
+Since we are using dynamic programming, the time complexity of this prgram will be O(mxn)
+where 
+m is the number of rows
+n is the number of columns

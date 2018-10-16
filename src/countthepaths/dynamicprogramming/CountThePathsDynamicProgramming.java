@@ -23,6 +23,13 @@ The input grid will contain N strings with M characters each - either '0' or '1'
 with '0' meaning an empty cell and '1' meaning an occupied cell. Each of these 
 strings corresponds to a row in the grid.
 
+Time complexity:
+Since we are using dynamic programming, the time complexity of this prgram will be O(mxn)
+where 
+m is the number of rows
+n is the number of columns
+
+
  */
 package countthepaths.dynamicprogramming;
 

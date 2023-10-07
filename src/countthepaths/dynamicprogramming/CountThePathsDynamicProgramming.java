@@ -63,13 +63,7 @@ public class CountThePathsDynamicProgramming
         int col = (grid.get(0)).length();
         
         int[][] memo = new int[row][col];
-        for (int i=0; i<row; i++)
-        {
-            for (int j=0; j<col; j++)
-            {
-                memo[i][j] = -1;
-            }
-        }
+        Arrays.fill(memo, -1);
         
         return countPaths(grid, memo, row-1, 0);
     }
